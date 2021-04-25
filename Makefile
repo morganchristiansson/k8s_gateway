@@ -32,7 +32,7 @@ build:
 ## Generate new helm package and update chart yaml file
 helm-update:
 	helm package charts/k8s-gateway -d charts/
-	helm repo index --url https://ori-edge.github.io/k8s_gateway/ --merge index.yaml .
+	helm repo index --url https://morganchristiansson.github.io/k8s_gateway/ --merge index.yaml .
 
 .PHONY: test
 test:
